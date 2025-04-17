@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anirudh Savant | Data Analyst</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0f172a, #000);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Particles.js Canvas */
+    #particles-js {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #22d3ee;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero {
+      text-align: center;
+      position: relative;
+    }
+
+    .hero img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #22d3ee;
+      margin-bottom: 1rem;
+    }
+
+    .typing {
+      font-size: 1.25rem;
+      color: #22d3ee;
+      height: 30px;
+    }
+
+    .skills span,
+    .project a,
+    .resume-btn,
+    .contact form button {
+      display: inline-block;
+      background: #06b6d4;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #fff;
+      margin: 0.25rem;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .skills span:hover,
+    .project a:hover,
+    .resume-btn:hover,
+    .contact form button:hover {
+      background: #0891b2;
+      transform: scale(1.05);
+    }
+
+    .project {
+      background: #1e293b;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+      border: none;
+      background: #1f2937;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div> <!-- Particles background -->
+
+  <header>
+    <h1>Anirudh Sawant</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="photo.png" alt="Anirudh Sawant" />
+    <h2>Hi, I'm Anirudh Sawant</h2>
+    <div class="typing" id="typing"></div>
+    <p>A Data Analyst who transforms raw data into actionable insights using Power BI, Excel, Python, and SQL.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Recent B.Com graduate from Mumbai University passionate about data analytics. With experience at HDFC Bank and Everest Fleet, I've honed my skills in generating impactful reports using Power BI, Excel, SQL, and Python.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>University of Mumbai</strong> – T.Y.B.COM (Feb 2025)</li>
+      <li><strong>Maharashtra State Board</strong> – 12th COM (Feb 2020), Maharshi Dayanand College, Parel</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Power BI</span>
+      <span>Excel</span>
+      <span>Python</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Blinkit Sales Dashboard</h3>
+      <p>Explained sales trends, top products, and regional performance using Power BI.</p>
+      <a href="https://www.linkedin.com/posts/anirudha-sawant-b4727133a_blinkit-sales-dashboard-explanation-for-activity-7315851267849818115-BvV7" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Shree Hotel Feedback Dashboard</h3>
+      <p>Created an interactive Power BI dashboard to visualize customer feedback.</p>
+      <a href="https://www.linkedin.com/posts/anirudha-sawant-b4727133a_shree-hotel-feedback-dashboard-explanation-activity-7315849912603074560-adxC" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section id="resume" style="text-align:center">
+    <h2>Resume</h2>
+    <a href="Anirudhcv.pdf" download class="resume-btn">Download Resume</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 style="text-align:center">Contact Me</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div style="text-align:center; margin-top:1rem;">
+      <a href="anirudhasawant111">Email</a> | 
+      <a href="https://www.linkedin.com/in/anirudha-sawant-b4727133a" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/anirudhsavant" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Anirudh Savant. All rights reserved.
+  </footer>
+
+  <!-- Include Particles.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <script>
+    // Initialize Particles.js
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80,
+          density: { enable: true, value_area: 800 }
+        },
+        color: { value: "#22d3ee" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000" }
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+          anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: true, speed: 40, size_min: 0, sync: false }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#22d3ee",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: "window",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+
+    // Typing animation
+    const text = ["Data Analyst", "Power BI Enthusiast", "Excel & SQL Pro", "Python Learner"];
+    let idx = 0, charIdx = 0;
+    const typingEl = document.getElementById("typing");
+
+    function type() {
+      if (charIdx < text[idx].length) {
+        typingEl.textContent += text[idx].charAt(charIdx);
+        charIdx++;
+        setTimeout(type, 100);
+      } else {
+        setTimeout(erase, 1000);
+      }
+    }
+
+    function erase() {
+      if (charIdx > 0) {
+        typingEl.textContent = text[idx].substring(0, charIdx - 1);
+        charIdx--;
+        setTimeout(erase, 50);
+      } else {
+        idx = (idx + 1) % text.length;
+        setTimeout(type, 300);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      type();
+
+      // Scroll reveal
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.5 });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
